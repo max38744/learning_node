@@ -1,0 +1,140 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #0B0301;
+}
+
+input:focus{
+    outline:none;
+}
+
+.clock{
+    margin-top: 250px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content:center;
+}
+.clock h1{
+    color: white;
+    font-size: 75px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.form input{
+    width: 400px;
+    height: 25px;
+    opacity: .85;
+    border-radius: 13px;
+    border: 1px solid #E0EEF3;
+    box-shadow: 2px 5px 10px rgb(45, 52, 68,.3);
+    font-size: 15px;
+}
+
+.greeting-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.greetings{
+    font-size: 40px;
+    color: white;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+
+.js-toDoForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.js-toDoForm input{
+    width: 400px;
+    height: 25px;
+    opacity: .85;
+    border-radius: 13px;
+    border: 1px solid #E0EEF3;
+    box-shadow: 2px 5px 10px rgb(45, 52, 68,.3);
+    font-size: 15px;
+}
+
+.toDoListContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.toDoList{
+    width: 350px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+li::before {
+    content: "☁️"; 
+    opacity: .8;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.toDoList li{
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.toDoList span{
+    font-size: 23px;
+    color: white;
+    opacity: .8;
+}
+.toDoList button{
+    position: absolute;
+    right: 0px;
+    width: 30px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+
+
+.form ,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: flex;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: -3;
+    animation: fadeIn .5s linear;
+}
+

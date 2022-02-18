@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "name": "learning_express",
+  "version": "0.0.1",
+  "description": "haha",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "moon",
+  "license": "MIT"
+}
